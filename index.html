@@ -1,281 +1,532 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Neelesh Karthikeyan</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+    <meta name="description" content="Portfolio Template for Developer" />
 
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/jpeg/photo.jpeg"
+              alt="Neelesh Karthikeyan Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Neelesh Karthikeyan</span>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
             </li>
-            <li>
-                <a href="#experience">Experience</a>
+            <!-- <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li> -->
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
             </li>
-            <li>
-                <a href="#education">Education</a>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
-            <li>
-                <a href="#projects">Projects</a>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
             </li>
-            <li>
-                <a href="#skills">Skills</a>
+
+            <!-- <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li> -->
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
             </li>
-        </ul>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Neelesh Karthikeyan</h1>
-            <h2>Data Science Master's Student</h2>
-            <!-- <a href="https://drive.google.com/file/d/1vxG5xvjZEneXuIYVa9Fgn5BqR1VetZvt/view?usp=sharing" class="btn-rounded-white">View Resume</a> -->
-
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <!-- <h1 class="heading-primary">Hey, My name is John Doe</h1> -->
+        <div class="home-hero__info">
+          <p class="text-primary">
+            Neelesh Karthikeyan is a highly skilled data scientist and software engineer with a diverse background in data analytics and software development. He holds a Master's degree in Data Science from Indiana University Bloomington and a Bachelor's degree in Industrial Engineering from Anna University, India. Neelesh's professional experience as a Data Scientist at Gyan Data Private Limited involved devising advanced solutions for top-tier clients, such as implementing a GraphQL API for processing connected car data, significantly reducing storage costs through AWS infrastructure optimization, and enhancing data analysis through machine learning models and advanced data mining techniques. His exceptional problem-solving abilities, proficiency in various programming languages, and expertise in technologies like Python, AWS, Git, and Docker make him a valuable asset in any data-centric or software engineering role. Neelesh's commitment to innovation and his track record of delivering results underscore his potential for impactful contributions in the field of data science and software engineering.
+          </p>
         </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
         </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Neelesh Karthikeyan is a highly skilled data scientist and software engineer with a diverse background in data analytics and software development. He holds a Master's degree in Data Science from Indiana University Bloomington and a Bachelor's degree in Industrial Engineering from Anna University, India. Neelesh's professional experience as a Data Scientist at Gyan Data Private Limited involved devising advanced solutions for top-tier clients, such as implementing a GraphQL API for processing connected car data, significantly reducing storage costs through AWS infrastructure optimization, and enhancing data analysis through machine learning models and advanced data mining techniques. His exceptional problem-solving abilities, proficiency in various programming languages, and expertise in technologies like Python, AWS, Git, and Docker make him a valuable asset in any data-centric or software engineering role. Neelesh's commitment to innovation and his track record of delivering results underscore his potential for impactful contributions in the field of data science and software engineering.
-                    </p>
-                </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <!-- <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2> -->
+        <div class="about__content">
+          <!-- <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>John Doe</strong>
+                and I'm a <strong> Frontend Web Developer </strong> located in
+                Los Angeles. I've done
+                <strong> remote </strong>
+                projects for agencies, consulted for startups, and collaborated
+                with talented people to create
+                <strong>digital products </strong>
+                for both business and consumer use.
+              </p>
+              <p class="about__content-details-para">
+                I'm a bit of a digital product junky. Over the years, I've used
+                hundreds of web and mobile apps in different industries and
+                verticals. Feel free to
+                <strong>contact</strong> me here.
+              </p>
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="Aug 2021 – Jul 2023">
-                <h3>Gyan Data</h3>
-                <h4>Data Scientist L2</h4>
-                <p>
-
-                    <b>API for Processing Connected Car Data</b>
-                    <br>Client: Top 5 global automaker
-                    <br>• Utilized a GraphQL API to restore and decode Controller Area Network sensor data from connected automobiles
-                    <br>• Saved storage costs by 35% by configuring AWS S3 policies based on usage using Terraform and CI/CD pipelines
-                    <br>• Scripted Spark jobs on AWS EMR to process parquet files based on requests like pothole detector and geo-fencing
-                    <br>• Collaborated with the product owner to understand business requirements, scrum planning, and backlog refinement
-
-                    <br><br><b>Trade Promotion Management for Consumer-Packaged-Goods</b>
-                    <br>Client: Top 10 global food brand
-                    <br>• Formulated linear mixed-effects models to predict product sales without promotion with 85% accuracy using R
-                    <br>• Migrated intermediate storage from SAS Grid to AWS S3, saving license costs and achieving 99% data durability
-                    <br>• Pulled weekly sales data from Hadoop and SAP to perform exploratory data analysis using R’s data.table package
-                    <br>• Improved the pipeline’s accuracy by 20% after extracting the data’s seasonality using Facebook’s Prophet library
-
-                    <br><br><b>Analytics for Efficient Use of Crash Prototypes</b>
-                    <br>Client: Top 5 global automaker
-                    <br>• Developed a threshold-based classifier to identify essential crash tests and optimized the number of tests by 73%
-                    <br>• Programmed data mining tools to pre-process raw accelerometer data using SciPy’s signal processing functions
-                    <br>• Extracted qualitative trends from the data using constrained-polynomial-fit method and interval-halving framework
-                    <br>• Utilized genetic algorithms to synthesize 108 non-essential crash test data with 86% accuracy using the trend data
-
-                    <br><br><b>Federated Learning and Policy-based Data Sharing</b>
-                    <br>Client: German deep tech company
-                    <br>• Developed a proof-of-concept to enable decentralized model training while preserving data privacy using PySyft
-                    <br>• Deployed PyGrid networks on Jupyter notebooks using Docker to manage nodes and transfer ML model weights
-                    <br>• Implemented secure data aggregation techniques like differential privacy and homomorphic encryption on networks
-                    <br>• Received positive feedback from client stakeholders, leading to full-scale implementation in production environments
-
-                    <br><br><b>Sales Analytics for Chemical Products</b>
-                    <br>Client: India’s top chemical brand
-                    <br>• Forecasted monthly sales at SKU level for 9 regions using SARIMAX, Facebook’s prophet, and heuristic models
-                    <br>• Collaborated with the product owner to understand business requirements, scrum planning, and backlog refinement
-                </p>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div> -->
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">R</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">TypeScript</div>
+              <div class="skills__skill">React.js</div>
+              <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Express.js</div>
+              <div class="skills__skill">Apollo GraphQL</div>
+              <div class="skills__skill">Heroku</div>
+              <div class="skills__skill">AWS</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">Docker</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">MongoDB</div>
+              <div class="skills__skill">PostgreSQL</div>
+              <div class="skills__skill">Terraform</div>
+              <div class="skills__skill">Postman</div>
+              <div class="skills__skill">CI/CD</div>
+              <div class="skills__skill">Jira</div>
+              <div class="skills__skill">Tableau</div>
+              <div class="skills__skill">Jupyter</div>
+              <div class="skills__skill">NumPy</div>
+              <div class="skills__skill">pandas</div>
+              <div class="skills__skill">Matplotlib</div>
+              <div class="skills__skill">scikit-learn</div>
+              <div class="skills__skill">statsmodels</div>
+              <div class="skills__skill">TensorFlow</div>
+              <div class="skills__skill">Keras</div>
+              <div class="skills__skill">PySpark</div>
+              <div class="skills__skill">data.table</div>
+              <div class="skills__skill">dplyr</div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
 
-            <!-- <div data-date="Feb 2021 - Jun 2021">
-                <h3>Redink Classroom</h3>
-                <h4>Research & Development Intern</h4>
-            </div> -->
-
-            <div data-date="Mar 2020 – Aug 2020">
-                <h3>GITAA</h3>
-                <h4>Data Science Intern</h4>
-                <p>• Developed a random forest classifier with 92\% accuracy for recognizing smartwatch hand gestures by utilizing PyRQA and PyUnicorn to extract features like recurrence rate and transitivity from accelerometer data.</p>
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/connected-car.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
             </div>
-
-            <div data-date="May 2020 - Jun 2020">
-                <h3>Department of Information Science and Technology, Anna University</h3>
-                <h4>Software Engineer Intern</h4>
-                <p>• Developed a random forest classifier with 92\% accuracy for recognizing smartwatch hand gestures by utilizing PyRQA and PyUnicorn to extract features like recurrence rate and transitivity from accelerometer data.</p>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">API for Processing Connected Car Data</h3>
+              <p class="projects__row-content-title">Client: Top 3 global automaker</p>
+              <p class="projects__row-content-desc">
+                In a multifaceted role, I played a pivotal part in enhancing data-driven insights within the automotive domain. Leveraging my expertise, I devised a robust GraphQL API tailored to extract and analyze automobile sensor data over the last 90 days. This facilitated comprehensive data analysis and enabled advanced functionalities such as pothole detection. Furthermore, I contributed significantly to optimizing infrastructure costs by implementing strategic measures. By configuring AWS S3 policies based on usage through Terraform and implementing CI/CD pipelines, I reduced storage expenses by an impressive 35%. Additionally, I streamlined data processing workflows by scripting Spark jobs to handle and analyze generated parquet files efficiently. These efforts culminated in the seamless construction of API payloads for 13 distinct data requests, contributing to a more efficient and cost-effective data processing ecosystem.
+              </p>
+              <a
+                href="./connected-car.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
             </div>
-
-        </div>
-    </div>
-
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="education-block">
-            <h3>Indiana University Bloomington</h3>
-            <span class="education-date">Aug 2023 - May 2023</span>
-            <h4>Master of Science in Data Science</h4>
-            <b>Relevant Coursework: </b>
-            <p>Applied Algorithms, Software Engineering - I, Applied Machine Learning, Applied Database Technologies, Engineering Cloud Computing, Introduction to Statistics</p>
-        </div>
-
-        <div class="education-block">
-            <h3>College of Engineering Guindy (Anna University)</h3>
-            <span class="education-date">Aug 2017 - Apr 2021</span>
-            <h4>Bachelor of Engineering in Industrial Engineering</h4>
-            <b>Relevant Coursework: </b>
-            <p>Engineering Mathematics, Probability and Statistics, Python Programming, Computing Techniques, Information Technology Essentials, Multivariate Statistical Analysis, Design of Experiments, Electronics Engineering, Simulation Modelling and Analysis,
-                Data Analytics Lab, Computing Practices Lab</p>
-            <br>
-            <b>Activities and Societies: </b>
-            <p> Head of Content, Students Association and Arts Society of CEG, Anna University (2020 – 2021)
-                <br> Deputy Director of Design, The Guindy Times, Anna University (2019 – 2020)
-                <br> Elected Joint Secretary, Society of Industrial Engineers, Anna University (2018 – 2019)</p>
-        </div>
-    </div>
-
-
-
-    <div id="projects">
-        <h2 class="heading">Projects</h2>
-
-        <div class="education-block">
-            <h3>Sharify: A Social Media Application</h3><br><br>
-            <p></p>• Spearheaded a 5-member team to develop a music sharing social media web-application using the MERN stack</p>
-            <p></p>• Integrated features like secure login, user-friendly interface, content sharing, and advanced search functionality</p>
-        </div>
-
-        <div class="education-block">
-            <h3>Deep Learning Hyperparameter Analysis: A Statistical Study</h3><br><br>
-            <p></p>• Engineered a NASNetMobile-based model with 96% accuracy and studied the significance of each hyper-parameter</p>
-        </div>
-
-        <!-- <div class="education-block">
-            <h3>Delivery Management System</h3><br><br>
-            <p>Used MERN stack and integrated 2-factor authentication, chat, live tracking, estimation, management and payment</p>
-        </div> -->
-
-    </div>
-
-    </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>R</li>
-            <li>SQL</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-            <li>Express.js</li>
-            <li>Apollo GraphQL</li>
-            <li>Heroku</li>
-            <li>AWS</li>
-            <li>Git</li>
-            <li>Docker</li>
-            <li>MySQL</li>
-            <li>MongoDB</li>
-            <li>PostgreSQL</li>
-            <li>Terraform</li>
-            <li>Postman</li>
-            <li>CI/CD</li>
-            <li>Jira</li>
-            <li>Tableau</li>
-            <li>Jupyter</li>
-            <li>NumPy</li>
-            <li>pandas</li>
-            <li>Matplotlib</li>
-            <li>scikit-learn</li>
-            <li>statsmodels</li>
-            <li>TensorFlow</li>
-            <li>Keras</li>
-            <li>PySpark</li>
-            <li>data.table</li>
-            <li>dplyr</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/neelesh2k" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <!-- <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a> -->
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/neel-k/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
-                    </ul>
-                </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/trade-promotion.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
             </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Trade Promotion Management for Consumer-Packaged-Goods</h3>
+              <p class="projects__row-content-title">Client: Top 10 global food brand</p>
+              <p class="projects__row-content-desc">
+                In my role, I spearheaded initiatives that significantly advanced the analytical capabilities and operational efficiency of trade promotion strategies within a data-driven framework. Leveraging my proficiency in R, I constructed predictive models designed to forecast the impact of trade promotions on sales, providing invaluable insights for optimizing promotional strategies. Additionally, I orchestrated a seamless migration of intermediate storage from SAS Grid to AWS S3. This strategic move not only resulted in substantial savings on license costs but also achieved an impressive 99% data durability, ensuring the integrity and availability of critical data. Furthermore, I implemented advanced data processing techniques, enhancing the accuracy of the pipeline by 20%. This improvement was achieved by extracting data seasonality using Facebook's Prophet library, a pivotal step in refining forecasting mechanisms and ultimately bolstering decision-making processes within the organization.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/crash-test.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Analytics for Efficient Use of Crash Prototypes</h3>
+              <p class="projects__row-content-title">Client: Top 5 global automaker</p>
+              <p class="projects__row-content-desc">
+                In my role, I played a key role in revolutionizing the approach to crash testing within the automotive domain by implementing innovative methodologies. I developed a sophisticated threshold-based classifier, leveraging my expertise in data analytics, to discern essential crash tests. This groundbreaking approach led to a remarkable optimization, reducing the required tests by an impressive 73%, streamlining resources, and maximizing efficiency. Additionally, I introduced Python-based data mining tools to process and analyze vast sets of automobile sensor data, extracting over five qualitative features that proved instrumental in enhancing the depth of analysis. Taking a step further, I conceptualized advanced algorithms aimed at synthesizing non-essential test data with a remarkable 86% accuracy. This involved meticulously leveraging extracted trends to generate 108 instances of non-essential test data. By achieving such accuracy in data synthesis, I contributed to a more comprehensive understanding of potential scenarios without the need for exhaustive physical testing, marking a significant advancement in both time and cost efficiency in crash testing and safety assessment.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/federated-learning.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Federated Learning and Policy-based Data Sharing</h3>
+              <p class="projects__row-content-title">Client: German AI firm</p>
+              <p class="projects__row-content-desc">
+                In a forward-looking initiative, I led the development of a groundbreaking proof-of-concept centered on decentralized machine learning (ML) model training and secure data sharing. Leveraging the PySyft framework, I crafted a robust solution that ensured privacy-preserving model training and facilitated secure data exchange among multiple domains. To operationalize this concept, I architected a Docker-based infrastructure, orchestrating the deployment of a PyGrid network spanning over five domains. This network seamlessly facilitated the secure transfer of model weights, enhancing the collaborative potential of machine learning endeavors. The success of the proof-of-concept was underscored by the positive feedback received from client stakeholders, validating the effectiveness and viability of the decentralized ML approach. This acclaim translated into a significant milestone as the project transitioned from a proof-of-concept phase to full-scale implementation in production environments. The deployment of this innovative solution not only marked a paradigm shift in machine learning but also showcased the adaptability and responsiveness of the developed technology to real-world needs, solidifying its impact on the cutting edge of decentralized and secure ML model training.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div><div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/sales-analytics.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Sales Analytics for Chemical Products</h3>
+              <p class="projects__row-content-title">Client: India’s top chemical brand</p>
+              <p class="projects__row-content-desc">
+                I conducted a monthly chemical sales forecast at the SKU level across nine regions: the forecasting framework combined time series analysis and heuristic models to project sales trends. Time series analysis thoroughly examined historical sales data and extracted insights to inform forecasting. Additionally, heuristic models incorporated domain-specific knowledge and regional factors influencing chemical sales, contributing to a more nuanced prediction. This approach aimed to enhance the accuracy and reliability of the forecasting process. The results gave decision-makers valuable insights for strategic planning and resource allocation across diverse regional landscapes by tailoring the methodology to quantitative analysis and industry-specific expertise.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+              src="./assets/jpeg/hand-gesture.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Gesture detection using wearable based accelerometer</h3>
+              <p class="projects__row-content-desc">
+                I engineered a random forest classification algorithm tailored for recognizing smartwatch hand gestures, achieving a 92% accuracy rate. The algorithm was designed to distinguish between various hand gestures effectively, contributing to enhanced user interaction with smartwatches. Additionally, I utilized PyRQA and PyUnicorn to extract the recurrence rate and transitivity from the inertial measurement unit's data, providing insights into the temporal and spatial characteristics of the gestures. This comprehensive approach aimed to improve the accuracy and effectiveness of smartwatch gesture recognition systems.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/sharify.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+                height="400px"
+                width="100px"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Sharify: A Social Media Application</h3>
+              <p class="projects__row-content-desc">
+                I led a team of five individuals in developing a music-sharing social media web application. The project utilized the MERN stack, combining MongoDB, Express.js, React, and Node.js technologies. The team aimed to create a seamless platform for users to share and engage with music content. The MERN stack provided a robust and efficient foundation for building both the frontend and backend components of the application. This collaborative initiative aimed to deliver an interactive and user-friendly music-sharing experience on social media.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Know More</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Neelesh Karthikeyan</h4>
+            <!-- <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p> -->
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
