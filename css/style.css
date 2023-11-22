@@ -291,6 +291,7 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
+    padding: 2rem 0;
     overflow: hidden; }
   .projects__row-img {
     width: 100%;
@@ -661,7 +662,8 @@ textarea {
 
 .skills {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+}
   .skills__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
