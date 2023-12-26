@@ -458,6 +458,8 @@ textarea {
 .project-details__desc {
   margin: 0 0 7rem 0; }
   .project-details__desc-para {
+    text-align: justify;
+    text-justify: inter-word;  
     font-size: 1.8rem;
     line-height: 1.7;
     color: grey;

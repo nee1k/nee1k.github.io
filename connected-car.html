@@ -97,13 +97,11 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                In a multifaceted role, I played a pivotal part in enhancing data-driven insights within the automotive domain. 
-                Leveraging my expertise, I devised GraphQL APIs tailored to extract automobile sensor data over the last 90 days. 
-                This facilitated comprehensive data analysis and enabled advanced functionalities such as pothole detection. 
-                Furthermore, I contributed significantly to optimizing infrastructure costs by implementing strategic measures. 
-                By configuring AWS S3 policies based on usage through Terraform and implementing CI/CD pipelines, I reduced storage expenses by an impressive 35%. 
-                Additionally, I streamlined data processing workflows by scripting Spark jobs to handle and analyze generated parquet files efficiently. 
-                These efforts culminated in the seamless construction of API payloads for 13 distinct data requests, contributing to a more efficient and cost-effective data processing ecosystem.
+                In the era of modern vehicles equipped with an intricate web of sensors, extracting and decoding the raw data emitted by these sensors poses a significant challenge. This challenge is precisely what the API project addresses—a cutting-edge API-based service designed to seamlessly extract Vehicle CAN data from end to end.
+                <br><br>
+                The primary purpose is to provide a streamlined solution for decoding and extracting high-volume data. As vehicles generate vast amounts of data through Electronic Control Units (ECUs) and Controller Area Network (CAN) networks, decoding this information becomes essential for various applications. The API decodes raw data and extracts decoded data from both hot and cold S3 storage, making it accessible to end-users.
+                <br><br>
+                The product encompasses a suite of GraphQL-based APIs designed to extract vehicle data seamlessly. The APIs serve diverse purposes, from token generation for authorization using Cognito credentials to extracting data by Vehicle Identification Number (VIN) with varying time frames. The APIs cater to various use cases, including extracting data hourly and supporting real-time data profiling. Payload parameters are meticulously defined, covering VINs, dispatch model types, start and end dates, and options for including GPS data. The output data schema adheres to the Apache Parquet format, optimizing data storage and retrieval with efficient compression and encoding schemes. 
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -114,7 +112,6 @@
                 <div class="skills__skill">Terraform</div>
                 <div class="skills__skill">CI/CD Pipelines</div>
                 <div class="skills__skill">Spark</div>
-                <div class="skills__skill">Parquet</div>
                 <div class="skills__skill">API</div>
                 <div class="skills__skill">Python</div>
                 <div class="skills__skill">Git</div>
