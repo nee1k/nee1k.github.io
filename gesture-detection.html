@@ -97,9 +97,20 @@
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                Gesture recognition, ni simple terms, is the ability of a computer or machine to interpret human gestures. These could include a wide array of motions such as hand movements, facial expressions, voice commands and the like. Devices such as cameras, microphones or accelerometers are used to detect and capture human gestures and machine learning / Al algorithms are then applied to interpret the data and recognize the gesture. Interpreting human gestures is an important problem and has many applications. For example, researchers at Ben Gurion University have developed a hand-gesture recognition system that enables doctors t o manipulate digital images during surgeries using hand gestures instead of touch screens or computer keyboards.
+                Gesture recognition, in simple terms, is the ability of a computer or machine to interpret human gestures. These could include a wide array of motions such as hand movements, facial expressions, voice commands and the like. Devices such as cameras, microphones or accelerometers are used to detect and capture human gestures and machine learning / Al algorithms are then applied to interpret the data and recognize the gesture. Interpreting human gestures is an important problem and has many applications. For example, researchers at Ben Gurion University have developed a hand-gesture recognition system that enables doctors to manipulate digital images during surgeries using hand gestures instead of touch screens or computer keyboards.
                 <br>
-                I engineered a random forest classification algorithm tailored for recognizing smartwatch hand gestures, achieving a 92% accuracy rate. The algorithm was designed to distinguish between various hand gestures effectively, contributing to enhanced user interaction with smartwatches. Additionally, I utilized PyRQA and PyUnicorn to extract the recurrence rate and transitivity from the inertial measurement unit's data, providing insights into the temporal and spatial characteristics of the gestures. This comprehensive approach aimed to improve the accuracy and effectiveness of smartwatch gesture recognition systems.
+                <br>
+                Solving this problem not only requires appropriate hardware but also proper lighting conditions, and suitable approaches for image capture. Our client required us to assist with recognizing human gestures using accelerometer measurements available in smart watches. Accelerometer sensors read the acceleration over a body or an object in its instantaneous rest frame taking into account the acceleration due to gravity.
+                <br>
+                <br>
+                GITAA had to develop a POC to detect a set of pre-defined gestures performed by a human wearing the smart watch at any given point in time. The data used for this study is accelerometer data of a set of pre-defined gestures. At GITAA, we addressed the problem ni two ways. The first
+                approach was atwo step process, in lines with the research done in GestureKeeper [1]. The first step involved Gesture Identification, which is identifying the gestures from non- gestures from a streaming accelerometer data by posing the problem as a binary classification problem. nI this step, Recurrent Quantification Analysis (RQA) is performed and two features namely recurrence rate (RR) and transitivity (T) are extracted on accelerometer y-axis data over which Support Vector Machine(SVM) is used as binary class detection method. The second step (Gesture Recognition) is to recognize the gesture from a set of pre-defined gestures on 3-axis accelerometer data along with statistical parameters - mean, median, root mean square (RMS), standard deviation, variance, skewness, and kurtosis over which SVM is modeled by defining it as a multi-class classification problem.
+                <br>
+                <br>
+                The second method adopted was to classify the gestures in the dictionary using a state of the art neural network method based on restricted column energy (RCE) [2] which is a 3 layer network (an input, a hidden and an output layer). In this method, the Euclidean Distance (ED) metric is replaced with Dynamic Time Warping (DTW) distance in each neuron in the hidden layer in order to activate the neuron. DTW distance is used to measure the distance between two time dependent data sequences that involves alignment of two time sequences before measuring the distance.
+                <br>
+                <br>
+                Based on the availability of the low cost smart devices with low frequency accelerometer data, the problem of gestures using accelerometer data acquired at a frequency of about 10 Hz was addressed with much accuracy using the first method identified above. The application of gesture recognition using wearable devices was realized by implementing the mouse pointer control based on the literature on a simple web application. This led to the development of a low-cost sensor based gesture recognition model to achieve simple daily tasks hardware setup more suitable for real time learning using the second method.
               </p>
             </div>
             <div class="project-details__tools-used">
@@ -124,7 +135,7 @@
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/nee1k">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
